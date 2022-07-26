@@ -8,7 +8,7 @@ using System.Data;
 
 namespace GestionBD.datos
 {
-    class datos
+    class BDdatos
     {
         //establecer la cadena de conexion
         //creo uh objeto de tipo OracleConnection
@@ -47,7 +47,7 @@ namespace GestionBD.datos
             return ds;
         }
 
-        public int consultarnumTabPartYNoPart(ref int numPart, ref int numNoPart)
+        public int consultarnumTabPartYNoPartBD(ref int numPart, ref int numNoPart)
         {
             int respuesta = 0;
             //abrimos conexion
