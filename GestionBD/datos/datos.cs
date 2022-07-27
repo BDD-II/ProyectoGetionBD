@@ -22,7 +22,7 @@ namespace GestionBD.datos
             //creo un objeto de tipo Comando
             OracleCommand miComando = new OracleCommand("pq_GestionBD.prcEspacioBD", miConexion);
             miComando.Parameters.Add("v_EspLibre", OracleDbType.Int32, espLibre, ParameterDirection.Output);
-            miComando.Parameters.Add("v_EspOcupado", OracleDbType.Varchar2, 10, espOcupado, ParameterDirection.Output);
+            miComando.Parameters.Add("v_EspOcupado", OracleDbType.Int32, espOcupado, ParameterDirection.Output);
             miComando.CommandType = CommandType.StoredProcedure;
 
             respuesta = miComando.ExecuteNonQuery();
@@ -35,10 +35,9 @@ namespace GestionBD.datos
             //abrimos conexion
             miConexion.Open();
             //creo un objeto de tipo Comando
-            OracleCommand miComando = new OracleCommand("pq_GestionBD.prcEspacioBD", miConexion);
-            miComando.Parameters.Add("v_tableName", OracleDbType.Varchar2, 30, nomTabla, ParameterDirection.Input);
+            OracleCommand miComando = new OracleCommand("pq_GestionBD.prcinfoRestricciones", miConexion);
             miComando.Parameters.Add("curRest", OracleDbType.RefCursor, ParameterDirection.Output);
-            miComando.CommandType = CommandType.StoredProcedure;
+            miComando.Parameters.Add("v_tableName", OracleDbType.Varchar2, 30, nomTabla, ParameterDirection.Input);
             miComando.CommandType = CommandType.StoredProcedure;
             OracleDataAdapter miAdaptador = new OracleDataAdapter(miComando);
             DataSet ds = new DataSet();
@@ -47,7 +46,7 @@ namespace GestionBD.datos
             return ds;
         }
 
-        public int consultarnumTabPartYNoPartBD(ref int numPart, ref int numNoPart)
+        public DataSet consultarnumTabPartYNoPartBD(ref int numPart, ref int numNoPart)
         {
             int respuesta = 0;
             //abrimos conexion
@@ -58,9 +57,11 @@ namespace GestionBD.datos
             miComando.Parameters.Add("v_numNoPart", OracleDbType.Int32, numNoPart, ParameterDirection.Output);
             miComando.CommandType = CommandType.StoredProcedure;
 
-            respuesta = miComando.ExecuteNonQuery();
+            OracleDataAdapter miAdaptador = new OracleDataAdapter(miComando);
+            DataSet ds = new DataSet();
+            miAdaptador.Fill(ds, "DTParticiones");
             miConexion.Close();
-            return respuesta;
+            return ds;
         }
 
         public DataSet consultarTabParticionadasBD(string nomTabla)

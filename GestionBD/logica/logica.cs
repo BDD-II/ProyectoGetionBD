@@ -9,7 +9,7 @@ using System.Data;
 namespace GestionBD.logica
 {
     
-    class logica
+    class BDlogica
     {
         BDdatos dt = new BDdatos();
         public int consultarEspacio(ref int espLibre, ref int espOcupado)
@@ -20,7 +20,7 @@ namespace GestionBD.logica
         {
             return dt.consultarRestriccionesBD(nomTabla);
         }
-        public int consultarnumTabPartYNoPart(ref int numPart, ref int numNoPart)
+        public DataSet consultarnumTabPartYNoPart(ref int numPart, ref int numNoPart)
         {
             return dt.consultarnumTabPartYNoPartBD(ref numPart, ref numNoPart);
         }

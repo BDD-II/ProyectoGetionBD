@@ -9,3 +9,15 @@ C:\Users\Kevin\source\repos\BDD-II\ProyectoGetionBD\GestionBD\bin\Debug\Oracle.D
 C:\Users\Kevin\source\repos\BDD-II\ProyectoGetionBD\GestionBD\obj\Debug\GestionBD.csproj.CopyComplete
 C:\Users\Kevin\source\repos\BDD-II\ProyectoGetionBD\GestionBD\obj\Debug\GestionBD.exe
 C:\Users\Kevin\source\repos\BDD-II\ProyectoGetionBD\GestionBD\obj\Debug\GestionBD.pdb
+C:\Users\User\Source\Repos\BDD-II\ProyectoGetionBD\GestionBD\bin\Debug\GestionBD.exe.config
+C:\Users\User\Source\Repos\BDD-II\ProyectoGetionBD\GestionBD\bin\Debug\GestionBD.exe
+C:\Users\User\Source\Repos\BDD-II\ProyectoGetionBD\GestionBD\bin\Debug\GestionBD.pdb
+C:\Users\User\Source\Repos\BDD-II\ProyectoGetionBD\GestionBD\bin\Debug\Oracle.DataAccess.dll
+C:\Users\User\Source\Repos\BDD-II\ProyectoGetionBD\GestionBD\obj\Debug\GestionBD.csproj.AssemblyReference.cache
+C:\Users\User\Source\Repos\BDD-II\ProyectoGetionBD\GestionBD\obj\Debug\GestionBD.Form1.resources
+C:\Users\User\Source\Repos\BDD-II\ProyectoGetionBD\GestionBD\obj\Debug\GestionBD.Properties.Resources.resources
+C:\Users\User\Source\Repos\BDD-II\ProyectoGetionBD\GestionBD\obj\Debug\GestionBD.csproj.GenerateResource.cache
+C:\Users\User\Source\Repos\BDD-II\ProyectoGetionBD\GestionBD\obj\Debug\GestionBD.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\BDD-II\ProyectoGetionBD\GestionBD\obj\Debug\GestionBD.csproj.CopyComplete
+C:\Users\User\Source\Repos\BDD-II\ProyectoGetionBD\GestionBD\obj\Debug\GestionBD.exe
+C:\Users\User\Source\Repos\BDD-II\ProyectoGetionBD\GestionBD\obj\Debug\GestionBD.pdb
