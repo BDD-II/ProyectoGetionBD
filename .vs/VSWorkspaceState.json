@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\GestionBD",
+    "\\GestionBD\\datos",
     "\\GestionBD\\logica"
   ],
-  "SelectedNode": "\\GestionBD\\logica\\logica.cs",
+  "SelectedNode": "\\GestionBD\\datos\\datos.cs",
   "PreviewInSolutionExplorer": false
 }

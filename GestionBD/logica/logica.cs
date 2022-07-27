@@ -9,7 +9,7 @@ using System.Data;
 namespace GestionBD.logica
 {
     
-    class logica
+    class BDlogica
     {
         BDdatos dt = new BDdatos();
         public int consultarEspacio(ref int espLibre, ref int espOcupado)
