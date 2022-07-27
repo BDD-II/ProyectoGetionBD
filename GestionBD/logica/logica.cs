@@ -20,7 +20,7 @@ namespace GestionBD.logica
         {
             return dt.consultarRestriccionesBD(nomTabla);
         }
-        public DataSet consultarnumTabPartYNoPart(ref int numPart, ref int numNoPart)
+        public int consultarnumTabPartYNoPart(ref int numPart, ref int numNoPart)
         {
             return dt.consultarnumTabPartYNoPartBD(ref numPart, ref numNoPart);
         }

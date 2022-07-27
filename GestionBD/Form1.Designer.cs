@@ -29,18 +29,19 @@ namespace GestionBD
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tbGestion = new System.Windows.Forms.TabControl();
             this.tbpEspacioBD = new System.Windows.Forms.TabPage();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.btnConsultarEspacio = new System.Windows.Forms.Button();
+            this.chtAlmacenamiento = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dgvEspacioBD = new System.Windows.Forms.DataGridView();
             this.EspacioLibre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EspacioOcupado = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,17 +50,16 @@ namespace GestionBD
             this.txtConsultaRest = new System.Windows.Forms.TextBox();
             this.dgvRestricciones = new System.Windows.Forms.DataGridView();
             this.tbpParticionTablas = new System.Windows.Forms.TabPage();
+            this.btnConsultarParticionado = new System.Windows.Forms.Button();
             this.chtParticionado = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tbpParticiones = new System.Windows.Forms.TabPage();
             this.btnConsultaParticiones = new System.Windows.Forms.Button();
             this.txtConsultaParticiones = new System.Windows.Forms.TextBox();
             this.chtParticiones = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dgvParticiones = new System.Windows.Forms.DataGridView();
-            this.btnConsultarEspacio = new System.Windows.Forms.Button();
-            this.btnConsultarParticionado = new System.Windows.Forms.Button();
             this.tbGestion.SuspendLayout();
             this.tbpEspacioBD.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chtAlmacenamiento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEspacioBD)).BeginInit();
             this.tbpRestricionesBD.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRestricciones)).BeginInit();
@@ -85,7 +85,7 @@ namespace GestionBD
             // tbpEspacioBD
             // 
             this.tbpEspacioBD.Controls.Add(this.btnConsultarEspacio);
-            this.tbpEspacioBD.Controls.Add(this.chart1);
+            this.tbpEspacioBD.Controls.Add(this.chtAlmacenamiento);
             this.tbpEspacioBD.Controls.Add(this.dgvEspacioBD);
             this.tbpEspacioBD.Location = new System.Drawing.Point(4, 22);
             this.tbpEspacioBD.Name = "tbpEspacioBD";
@@ -95,22 +95,33 @@ namespace GestionBD
             this.tbpEspacioBD.Text = "Espacio de la base de Datos";
             this.tbpEspacioBD.UseVisualStyleBackColor = true;
             // 
-            // chart1
+            // btnConsultarEspacio
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chart1.Legends.Add(legend5);
-            this.chart1.Location = new System.Drawing.Point(301, 45);
-            this.chart1.Name = "chart1";
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chart1.Series.Add(series5);
-            this.chart1.Size = new System.Drawing.Size(382, 300);
-            this.chart1.TabIndex = 1;
-            this.chart1.Text = "chart1";
+            this.btnConsultarEspacio.Location = new System.Drawing.Point(29, 29);
+            this.btnConsultarEspacio.Name = "btnConsultarEspacio";
+            this.btnConsultarEspacio.Size = new System.Drawing.Size(75, 23);
+            this.btnConsultarEspacio.TabIndex = 2;
+            this.btnConsultarEspacio.Text = "Consultar";
+            this.btnConsultarEspacio.UseVisualStyleBackColor = true;
+            this.btnConsultarEspacio.Click += new System.EventHandler(this.btnConsultarEspacio_Click);
+            // 
+            // chtAlmacenamiento
+            // 
+            chartArea11.Name = "ChartArea1";
+            this.chtAlmacenamiento.ChartAreas.Add(chartArea11);
+            legend11.Name = "Legend1";
+            this.chtAlmacenamiento.Legends.Add(legend11);
+            this.chtAlmacenamiento.Location = new System.Drawing.Point(301, 45);
+            this.chtAlmacenamiento.Name = "chtAlmacenamiento";
+            series11.ChartArea = "ChartArea1";
+            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series11.IsValueShownAsLabel = true;
+            series11.Legend = "Legend1";
+            series11.Name = "Series1";
+            this.chtAlmacenamiento.Series.Add(series11);
+            this.chtAlmacenamiento.Size = new System.Drawing.Size(382, 300);
+            this.chtAlmacenamiento.TabIndex = 1;
+            this.chtAlmacenamiento.Text = "chart1";
             // 
             // dgvEspacioBD
             // 
@@ -168,7 +179,7 @@ namespace GestionBD
             this.dgvRestricciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRestricciones.Location = new System.Drawing.Point(44, 67);
             this.dgvRestricciones.Name = "dgvRestricciones";
-            this.dgvRestricciones.Size = new System.Drawing.Size(330, 264);
+            this.dgvRestricciones.Size = new System.Drawing.Size(444, 264);
             this.dgvRestricciones.TabIndex = 0;
             // 
             // tbpParticionTablas
@@ -183,19 +194,30 @@ namespace GestionBD
             this.tbpParticionTablas.Text = "Tablas particionadas y no particionadas ";
             this.tbpParticionTablas.UseVisualStyleBackColor = true;
             // 
+            // btnConsultarParticionado
+            // 
+            this.btnConsultarParticionado.Location = new System.Drawing.Point(44, 34);
+            this.btnConsultarParticionado.Name = "btnConsultarParticionado";
+            this.btnConsultarParticionado.Size = new System.Drawing.Size(75, 23);
+            this.btnConsultarParticionado.TabIndex = 1;
+            this.btnConsultarParticionado.Text = "Consultar";
+            this.btnConsultarParticionado.UseVisualStyleBackColor = true;
+            this.btnConsultarParticionado.Click += new System.EventHandler(this.btnConsultarParticionado_Click);
+            // 
             // chtParticionado
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chtParticionado.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chtParticionado.Legends.Add(legend4);
+            chartArea12.Name = "ChartArea1";
+            this.chtParticionado.ChartAreas.Add(chartArea12);
+            legend12.Name = "Legend1";
+            this.chtParticionado.Legends.Add(legend12);
             this.chtParticionado.Location = new System.Drawing.Point(101, 34);
             this.chtParticionado.Name = "chtParticionado";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chtParticionado.Series.Add(series4);
+            series12.ChartArea = "ChartArea1";
+            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series12.IsValueShownAsLabel = true;
+            series12.Legend = "Legend1";
+            series12.Name = "Series1";
+            this.chtParticionado.Series.Add(series12);
             this.chtParticionado.Size = new System.Drawing.Size(495, 300);
             this.chtParticionado.TabIndex = 0;
             this.chtParticionado.Text = "chart1";
@@ -222,6 +244,7 @@ namespace GestionBD
             this.btnConsultaParticiones.TabIndex = 3;
             this.btnConsultaParticiones.Text = "Consultar";
             this.btnConsultaParticiones.UseVisualStyleBackColor = true;
+            this.btnConsultaParticiones.Click += new System.EventHandler(this.btnConsultaParticiones_Click);
             // 
             // txtConsultaParticiones
             // 
@@ -232,16 +255,16 @@ namespace GestionBD
             // 
             // chtParticiones
             // 
-            chartArea6.Name = "ChartArea1";
-            this.chtParticiones.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chtParticiones.Legends.Add(legend6);
+            chartArea10.Name = "ChartArea1";
+            this.chtParticiones.ChartAreas.Add(chartArea10);
+            legend10.Name = "Legend1";
+            this.chtParticiones.Legends.Add(legend10);
             this.chtParticiones.Location = new System.Drawing.Point(372, 65);
             this.chtParticiones.Name = "chtParticiones";
-            series6.ChartArea = "ChartArea1";
-            series6.Legend = "Legend1";
-            series6.Name = "Series1";
-            this.chtParticiones.Series.Add(series6);
+            series10.ChartArea = "ChartArea1";
+            series10.Legend = "Legend1";
+            series10.Name = "Series1";
+            this.chtParticiones.Series.Add(series10);
             this.chtParticiones.Size = new System.Drawing.Size(344, 280);
             this.chtParticiones.TabIndex = 1;
             this.chtParticiones.Text = "chart1";
@@ -253,26 +276,7 @@ namespace GestionBD
             this.dgvParticiones.Name = "dgvParticiones";
             this.dgvParticiones.Size = new System.Drawing.Size(240, 280);
             this.dgvParticiones.TabIndex = 0;
-            // 
-            // btnConsultarEspacio
-            // 
-            this.btnConsultarEspacio.Location = new System.Drawing.Point(29, 29);
-            this.btnConsultarEspacio.Name = "btnConsultarEspacio";
-            this.btnConsultarEspacio.Size = new System.Drawing.Size(75, 23);
-            this.btnConsultarEspacio.TabIndex = 2;
-            this.btnConsultarEspacio.Text = "Consultar";
-            this.btnConsultarEspacio.UseVisualStyleBackColor = true;
-            this.btnConsultarEspacio.Click += new System.EventHandler(this.btnConsultarEspacio_Click);
-            // 
-            // btnConsultarParticionado
-            // 
-            this.btnConsultarParticionado.Location = new System.Drawing.Point(44, 34);
-            this.btnConsultarParticionado.Name = "btnConsultarParticionado";
-            this.btnConsultarParticionado.Size = new System.Drawing.Size(75, 23);
-            this.btnConsultarParticionado.TabIndex = 1;
-            this.btnConsultarParticionado.Text = "Consultar";
-            this.btnConsultarParticionado.UseVisualStyleBackColor = true;
-            this.btnConsultarParticionado.Click += new System.EventHandler(this.btnConsultarParticionado_Click);
+            this.dgvParticiones.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvParticiones_CellContentClick);
             // 
             // Form1
             // 
@@ -284,7 +288,7 @@ namespace GestionBD
             this.Text = "Form1";
             this.tbGestion.ResumeLayout(false);
             this.tbpEspacioBD.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chtAlmacenamiento)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEspacioBD)).EndInit();
             this.tbpRestricionesBD.ResumeLayout(false);
             this.tbpRestricionesBD.PerformLayout();
@@ -304,7 +308,7 @@ namespace GestionBD
         private System.Windows.Forms.TabControl tbGestion;
         private System.Windows.Forms.TabPage tbpEspacioBD;
         private System.Windows.Forms.TabPage tbpRestricionesBD;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chtAlmacenamiento;
         private System.Windows.Forms.DataGridView dgvEspacioBD;
         private System.Windows.Forms.Button btnConsultarRestric;
         private System.Windows.Forms.TextBox txtConsultaRest;
