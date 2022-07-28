@@ -12,7 +12,7 @@ namespace GestionBD.datos
     {
         //establecer la cadena de conexion
         //creo uh objeto de tipo OracleConnection
-        OracleConnection miConexion = new OracleConnection("Data Source = localhost; User ID = bases2; Password = oracle;");
+        OracleConnection miConexion = new OracleConnection("Data Source = localhost; User ID = prueba; Password = oracle;");
 
         public int consultarEspacioBD(ref int espLibre, ref int espOcupado)
         {

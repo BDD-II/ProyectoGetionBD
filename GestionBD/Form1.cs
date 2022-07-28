@@ -25,18 +25,16 @@ namespace GestionBD
         {
             int espLibre = 0, espeOcupado = 0;
 
-            if (lg.consultarEspacio(ref espLibre, ref espeOcupado) != 0)
-            {
-                dgvEspacioBD.Rows.Add(new string[] { espLibre.ToString(), espeOcupado.ToString() });
-                ArrayList espNombres = new ArrayList();
-                ArrayList espValores = new ArrayList();
-                espNombres.Add("Libre");
-                espNombres.Add("Ocupado");
-                espValores.Add(espLibre.ToString());
-                espValores.Add(espeOcupado.ToString());
+            lg.consultarEspacio(ref espLibre, ref espeOcupado);
+            dgvEspacioBD.Rows.Add(new string[] { espLibre.ToString(), espeOcupado.ToString() });
+            ArrayList espNombres = new ArrayList();
+            ArrayList espValores = new ArrayList();
+            espNombres.Add("Libre");
+            espNombres.Add("Ocupado");
+            espValores.Add(espLibre.ToString());
+            espValores.Add(espeOcupado.ToString());
 
-                chtAlmacenamiento.Series[0].Points.DataBindXY(espNombres, espValores);
-            }
+            chtAlmacenamiento.Series[0].Points.DataBindXY(espNombres, espValores);
         }
 
         private void btnConsultarRestric_Click(object sender, EventArgs e)
@@ -51,17 +49,15 @@ namespace GestionBD
         private void btnConsultarParticionado_Click(object sender, EventArgs e)
         {
             int numPart = 0, numNoPart = 0;
-            if (lg.consultarnumTabPartYNoPart(ref numPart, ref numNoPart) != 0)
-            {                           
-                ArrayList tabNombres = new ArrayList();
-                ArrayList tabValores = new ArrayList();
-                tabNombres.Add("Particionadas");
-                tabNombres.Add("No Particionas");
-                tabValores.Add(numPart.ToString());
-                tabValores.Add(numNoPart.ToString());
+            lg.consultarnumTabPartYNoPart(ref numPart, ref numNoPart);
+            ArrayList tabNombres = new ArrayList();
+            ArrayList tabValores = new ArrayList();
+            tabNombres.Add("Particionadas");
+            tabNombres.Add("No Particionas");
+            tabValores.Add(numPart.ToString());
+            tabValores.Add(numNoPart.ToString());
 
-                chtParticionado.Series[0].Points.DataBindXY(tabNombres, tabValores);
-            }
+            chtParticionado.Series[0].Points.DataBindXY(tabNombres, tabValores);
         }
 
         private void btnConsultaParticiones_Click(object sender, EventArgs e)
