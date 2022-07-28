@@ -29,15 +29,15 @@ namespace GestionBD
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tbGestion = new System.Windows.Forms.TabControl();
             this.tbpEspacioBD = new System.Windows.Forms.TabPage();
             this.btnConsultarEspacio = new System.Windows.Forms.Button();
@@ -107,18 +107,18 @@ namespace GestionBD
             // 
             // chtAlmacenamiento
             // 
-            chartArea11.Name = "ChartArea1";
-            this.chtAlmacenamiento.ChartAreas.Add(chartArea11);
-            legend11.Name = "Legend1";
-            this.chtAlmacenamiento.Legends.Add(legend11);
+            chartArea1.Name = "ChartArea1";
+            this.chtAlmacenamiento.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chtAlmacenamiento.Legends.Add(legend1);
             this.chtAlmacenamiento.Location = new System.Drawing.Point(301, 45);
             this.chtAlmacenamiento.Name = "chtAlmacenamiento";
-            series11.ChartArea = "ChartArea1";
-            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series11.IsValueShownAsLabel = true;
-            series11.Legend = "Legend1";
-            series11.Name = "Series1";
-            this.chtAlmacenamiento.Series.Add(series11);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series1.IsValueShownAsLabel = true;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chtAlmacenamiento.Series.Add(series1);
             this.chtAlmacenamiento.Size = new System.Drawing.Size(382, 300);
             this.chtAlmacenamiento.TabIndex = 1;
             this.chtAlmacenamiento.Text = "chart1";
@@ -206,18 +206,18 @@ namespace GestionBD
             // 
             // chtParticionado
             // 
-            chartArea12.Name = "ChartArea1";
-            this.chtParticionado.ChartAreas.Add(chartArea12);
-            legend12.Name = "Legend1";
-            this.chtParticionado.Legends.Add(legend12);
+            chartArea2.Name = "ChartArea1";
+            this.chtParticionado.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chtParticionado.Legends.Add(legend2);
             this.chtParticionado.Location = new System.Drawing.Point(101, 34);
             this.chtParticionado.Name = "chtParticionado";
-            series12.ChartArea = "ChartArea1";
-            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series12.IsValueShownAsLabel = true;
-            series12.Legend = "Legend1";
-            series12.Name = "Series1";
-            this.chtParticionado.Series.Add(series12);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series2.IsValueShownAsLabel = true;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chtParticionado.Series.Add(series2);
             this.chtParticionado.Size = new System.Drawing.Size(495, 300);
             this.chtParticionado.TabIndex = 0;
             this.chtParticionado.Text = "chart1";
@@ -255,16 +255,16 @@ namespace GestionBD
             // 
             // chtParticiones
             // 
-            chartArea10.Name = "ChartArea1";
-            this.chtParticiones.ChartAreas.Add(chartArea10);
-            legend10.Name = "Legend1";
-            this.chtParticiones.Legends.Add(legend10);
+            chartArea3.Name = "ChartArea1";
+            this.chtParticiones.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chtParticiones.Legends.Add(legend3);
             this.chtParticiones.Location = new System.Drawing.Point(372, 65);
             this.chtParticiones.Name = "chtParticiones";
-            series10.ChartArea = "ChartArea1";
-            series10.Legend = "Legend1";
-            series10.Name = "Series1";
-            this.chtParticiones.Series.Add(series10);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chtParticiones.Series.Add(series3);
             this.chtParticiones.Size = new System.Drawing.Size(344, 280);
             this.chtParticiones.TabIndex = 1;
             this.chtParticiones.Text = "chart1";
@@ -276,7 +276,7 @@ namespace GestionBD
             this.dgvParticiones.Name = "dgvParticiones";
             this.dgvParticiones.Size = new System.Drawing.Size(240, 280);
             this.dgvParticiones.TabIndex = 0;
-            this.dgvParticiones.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvParticiones_CellContentClick);
+            this.dgvParticiones.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvParticiones_CellClick);
             // 
             // Form1
             // 

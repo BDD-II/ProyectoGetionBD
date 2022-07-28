@@ -70,15 +70,14 @@ namespace GestionBD
             ds = lg.consultarTabParticionadas(txtConsultaParticiones.Text);
             dgvParticiones.DataSource = ds;
             dgvParticiones.DataMember = "DTParticionadas";
+            chtParticiones.Series[0].Points.Clear();
         }
 
-        private void dgvParticiones_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvParticiones_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             string nomParticion;
             nomParticion = dgvParticiones.CurrentRow.Cells[0].Value.ToString();
 
-            dgvRestricciones.DataSource = ds;
-            dgvRestricciones.DataMember = "DTParticionadas1";
             ArrayList nomSubParticiones = new ArrayList();
             ArrayList CantFilas = new ArrayList();
             foreach (DataRow drow in ds.Tables[1].Rows)
